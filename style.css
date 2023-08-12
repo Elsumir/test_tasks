@@ -31,10 +31,9 @@ section {
 }
 
 .button {
-  background: #0a467e;
-  color: #fff;
   padding: 12px 40px;
   cursor: pointer;
+  border: 1px solid #56565a;
 }
 
 /* Первый блок */
@@ -122,13 +121,25 @@ section {
   gap: 15px;
 }
 
-.income {
+.button__profit {
+  background: #0a467e;
+  border: 1px solid #0a467e;
+  color: #fff;
+  transition: all 0.5s;
+}
+
+.button__profit:hover {
+  background: #fff;
+  color: #56565a;
+  border: 1px solid #56565a;
+}
+.grid-area__income {
   grid-area: income;
 }
-.discount {
+.grid-area__discount {
   grid-area: discount;
 }
-.business {
+.grid-area__business {
   grid-area: business;
 }
 
@@ -152,4 +163,8 @@ section {
 
 .profit-item p {
   font-size: 14px;
+}
+
+.profit-icon {
+  margin-bottom: 10px;
 }
