@@ -168,3 +168,122 @@ section {
 .profit-icon {
   margin-bottom: 10px;
 }
+
+@media (max-width: 1200px) {
+  .profit {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .profit-info {
+    width: 50%;
+  }
+
+  .profit-items {
+    grid-template-areas:
+      'income discount'
+      'business business';
+  }
+
+  .grid-area__business {
+    margin: 0 auto;
+    grid-area: business;
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .about-frontend__main {
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .about-frontend__item {
+    flex-basis: 45%;
+  }
+
+  .profit-info {
+    width: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .about-frontend__title {
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+
+  .about-frontend__item-info {
+    font-size: 14px;
+  }
+
+  .profit-info {
+    width: 90%;
+  }
+
+  .profit-items {
+    grid-template-areas:
+      'income'
+      'business'
+      'discount';
+  }
+
+  .profit-item {
+    max-width: 75%;
+    margin: 0 auto;
+  }
+
+  .profit-info h2 {
+    font-size: 28px;
+  }
+
+  .button__profit {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .about-frontend__title p {
+    margin-bottom: 5px;
+  }
+
+  .about-frontend__title {
+    max-width: 100%;
+    padding: 30px 0;
+  }
+
+  .about-frontend__item {
+    flex-basis: 100%;
+  }
+
+  .about-frontend__item-title {
+    margin-bottom: 15px;
+  }
+
+  .about-frontend__main {
+    gap: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-frontend__title {
+    font-size: 14px;
+  }
+
+  .profit-item {
+    max-width: 100%;
+  }
+}
